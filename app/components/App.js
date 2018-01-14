@@ -34,27 +34,18 @@ class App extends React.Component {
         <Grid>
           <Switch>
             {home}
-            <Route exact path="/login" render={(props) => <Login toggleLogin={this.toggleLogin} loggedIn={loggedIn}/>} />
-            <Route component={Signup} exact path="/signup" />
+            <Route
+              exact
+              path="/login"
+              render={(props) => <Login toggleLogin={this.toggleLogin} loggedIn={loggedIn}/>}
+            />
+            <Route
+              component={Signup}
+              exact
+              path="/signup"
+            />
           </Switch>
         </Grid>
-        <p>ph</p>
-        <p>ph</p>
-        <p>ph</p>
-        <p>ph</p>
-        <p>ph</p>
-        <p>ph</p>
-        <p>ph</p>
-        <p>ph</p>
-        <p>ph</p>
-        <p>ph</p>
-        <p>ph</p>
-        <p>ph</p>
-        <p>ph</p>
-        <p>ph</p>
-        <p>ph</p>
-        <p>ph</p>
-        <p>ph</p>
       </div>
     );
   }

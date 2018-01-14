@@ -1,31 +1,40 @@
 import React from 'react';
-import { ListGroup, ListGroupItem } from 'react-bootstrap';
+import { Button, ListGroup, ListGroupItem } from 'react-bootstrap';
 
 const SideMenu = ({ currentMenu, toggleMenu }) => {
   return (
-    <ListGroup>
-      <ListGroupItem
-        href="#"
-        active={currentMenu === "bridges"}
-        onClick={() => toggleMenu("bridges")}
-      >
-        Bridges
-      </ListGroupItem>
-      <ListGroupItem
-        href="#"
-        active={currentMenu === "services"}
-        onClick={() => toggleMenu("services")}
-      >
-        Services
-      </ListGroupItem>
-      <ListGroupItem
-        href="#"
-        active={currentMenu === "account"}
-        onClick={() => toggleMenu("account")}
-      >
-        Account
-      </ListGroupItem>
-    </ListGroup>
+    <div>
+      <br />
+      <Button className="newbtn"><span style={{"color":"white"}}>New...</span></Button>
+      <br />
+      <br />
+      <ListGroup>
+        <ListGroupItem
+          href="#"
+          active={currentMenu === "bridges"}
+          onClick={() => toggleMenu("bridges")}
+          style={{"background-color":"white"}}
+        >
+          Bridges
+        </ListGroupItem>
+        <ListGroupItem
+          href="#"
+          active={currentMenu === "services"}
+          onClick={() => toggleMenu("services")}
+          style={{"background-color":"white"}}
+        >
+          Services
+        </ListGroupItem>
+        <ListGroupItem
+          href="#"
+          active={currentMenu === "account"}
+          onClick={() => toggleMenu("account")}
+          style={{"background-color":"white"}}
+        >
+          Account
+        </ListGroupItem>
+      </ListGroup>
+    </div>
   );
 };
 

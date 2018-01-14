@@ -58,11 +58,11 @@ class Signup extends React.Component {
         <br />
         <a href="#">Passphrase:</a>
         <br />
-        <input />
+        <input type="password"/>
         <br />
         <a href="#">Enter pass again:</a>
         <br />
-        <input />
+        <input type="password"/>
         <br />
         <br />
         <br />

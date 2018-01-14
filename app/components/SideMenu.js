@@ -5,7 +5,7 @@ const SideMenu = ({ currentMenu, toggleMenu }) => {
   return (
     <div>
       <br />
-      <Button className="newbtn"><span style={{"color":"white"}}>New...</span></Button>
+      <Button className="newbtn"><span style={{"color":"white"}}>New trust...</span></Button>
       <br />
       <br />
       <ListGroup>
@@ -23,7 +23,7 @@ const SideMenu = ({ currentMenu, toggleMenu }) => {
           onClick={() => toggleMenu("services")}
           style={{"background-color":"white"}}
         >
-          Services
+          Files
         </ListGroupItem>
         <ListGroupItem
           href="#"

@@ -5,9 +5,9 @@ import TransUnion from './TransUnion';
 import Propy from './Propy';
 import { Row, Col } from 'react-bootstrap';
  
-const Bridges = () => (
+const Bridges = ({ toggleMenu }) => (
 <div>
-  <Row>	
+  <Row onClick={() => toggleMenu("services")}>	
   	<Col xs={6} md={4}>
       <div className="bridgePanels" style={{"margin":"auto", "padding-left":"35px"}}>
         <Equifax />

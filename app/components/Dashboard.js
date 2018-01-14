@@ -8,7 +8,7 @@ import { Row, Col } from 'react-bootstrap';
 class Dashboard extends React.Component {
   constructor () {
     super();
-    this.state = {"currentMenu":"bridges"};
+    this.state = {"currentMenu":"bridges","showModal":false};
     this.toggleMenu = this.toggleMenu.bind(this);
   };
 
@@ -20,14 +20,14 @@ class Dashboard extends React.Component {
     const { currentMenu } = this.state;
 
     const panels = {
-      "bridges": <Bridges />,
+      "bridges": <Bridges toggleMenu={this.toggleMenu}/>,
       "services": <Services />,
       "account": <Account />
     };
 
     const titles = {
       "bridges": <h2>Bridges</h2>,
-      "services": <h2>Services</h2>,
+      "services": <h2>Files</h2>,
       "account": <h2>Account</h2>
     };
 

@@ -13,23 +13,30 @@ class Dashboard extends React.Component {
   };
 
   toggleMenu (currentMenu) {
+    console.log(currentMenu);
     this.setState({currentMenu});
   };
 
   render () {
+    const { currentMenu } = this.state;
+
+    const panels = {
+      "bridges": <Bridges />,
+      "services": <Services />,
+      "account": <Account />
+    };
+
     return (
       <Row className="show-grid">
         <Col xs={12} md={4}>
-          <SideMenu />
+          <SideMenu currentMenu={currentMenu} toggleMenu={this.toggleMenu} />
         </Col>
         <Col xs={12} md={8}>
-          <div id="panelTitle">
-          {"This is the dashboard container"}
-          </div>
+          <h3 id="panelTitle">
+            {currentMenu}
+          </h3>
           <div className="dashboardPanels">
-            <Bridges />
-            <Services />
-            <Account />
+            {panels[currentMenu]}
           </div>
         </Col>
       </Row>

@@ -2,6 +2,8 @@ import React from 'react';
 import Bridges from './Bridges.js';
 import Services from './Services.js';
 import Account from './Account.js';
+import SideMenu from './SideMenu.js';
+import { Row, Col } from 'react-bootstrap';
 
 class Dashboard extends React.Component {
   constructor () {
@@ -16,12 +18,17 @@ class Dashboard extends React.Component {
 
   render () {
     return (
-      <div style={{"border-style":"solid"}}>
-        {"This is the dashboard container"}
-        <Bridges />
-        <Services />
-        <Account />
-      </div>
+      <Row className="show-grid">
+        <Col xs={12} md={4}>
+          <SideMenu />
+        </Col>
+        <Col xs={12} md={8}>
+          {"This is the dashboard container"}
+          <Bridges />
+          <Services />
+          <Account />
+        </Col>
+      </Row>
     );
   };
 };

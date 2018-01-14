@@ -5,6 +5,7 @@ import Landing from './Landing';
 import Login from './Login';
 import Signup from './Signup';
 import Dashboard from './Dashboard';
+import { Grid } from 'react-bootstrap';
 
 class App extends React.Component {
   constructor () {
@@ -23,11 +24,30 @@ class App extends React.Component {
     return (
       <div>
         <Header toggleLogin={this.toggleLogin} loggedIn={loggedIn}/>
-        <Switch>
-          <Route component={Dashboard} exact path="/" />
-          <Route component={Login} exact path="/login" />
-          <Route component={Signup} exact path="/signup" />
-        </Switch>
+        <Grid>
+          <Switch>
+            <Route component={Dashboard} exact path="/" />
+            <Route component={Login} exact path="/login" />
+            <Route component={Signup} exact path="/signup" />
+          </Switch>
+        </Grid>
+        <p>ph</p>
+        <p>ph</p>
+        <p>ph</p>
+        <p>ph</p>
+        <p>ph</p>
+        <p>ph</p>
+        <p>ph</p>
+        <p>ph</p>
+        <p>ph</p>
+        <p>ph</p>
+        <p>ph</p>
+        <p>ph</p>
+        <p>ph</p>
+        <p>ph</p>
+        <p>ph</p>
+        <p>ph</p>
+        <p>ph</p>
       </div>
     );
   }

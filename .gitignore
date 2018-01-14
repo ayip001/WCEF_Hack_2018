@@ -61,5 +61,9 @@ npm-debug.log
 /coverage
 
 # vim
+.swp
+.swo
+*swp
+*swo
 swp
 swo

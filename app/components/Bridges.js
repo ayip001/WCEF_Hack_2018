@@ -8,14 +8,14 @@ import { Row, Col } from 'react-bootstrap';
 const Bridges = () => (
 <div>
   <Row>	
-  	<Col xs={6} md={4} style={{'padding':'0px'}} >
-      <div className="bridgePanels">
+  	<Col xs={6} md={4}>
+      <div className="bridgePanels" style={{"margin":"auto", "padding-left":"35px"}}>
         <Equifax />
         <Experian />
       </div>
     </Col>
-  	<Col xs={6} md={4} style={{'padding':'0px'}}>
-      <div className="bridgePanels">
+  	<Col xs={6} md={4}>
+      <div className="bridgePanels" style={{"margin":"auto", "padding-right":"20px"}}>
         <TransUnion />
         <Propy />
       </div>

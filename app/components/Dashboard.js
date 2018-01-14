@@ -10,14 +10,19 @@ class Dashboard extends React.Component {
     super();
     this.state = {"currentMenu":"bridges","showModal":false};
     this.toggleMenu = this.toggleMenu.bind(this);
+    this.toggleModal = this.toggleModal.bind(this);
   };
 
   toggleMenu (currentMenu) {
     this.setState({currentMenu});
   };
 
+  toggleModal (showModal) {
+    this.setState({showModal});
+  };
+
   render () {
-    const { currentMenu } = this.state;
+    const { currentMenu, showModal } = this.state;
 
     const panels = {
       "bridges": <Bridges toggleMenu={this.toggleMenu}/>,
@@ -34,7 +39,12 @@ class Dashboard extends React.Component {
     return (
       <Row className="show-grid">
         <Col xs={12} md={4}>
-          <SideMenu currentMenu={currentMenu} toggleMenu={this.toggleMenu} />
+          <SideMenu
+            currentMenu={currentMenu}
+            toggleMenu={this.toggleMenu}
+            showModal={showModal}
+            toggleModal={this.toggleModal}
+          />
         </Col>
         <Col xs={12} md={8}>
           {titles[currentMenu]}

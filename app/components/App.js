@@ -40,9 +40,9 @@ class App extends React.Component {
               render={(props) => <Login toggleLogin={this.toggleLogin} loggedIn={loggedIn}/>}
             />
             <Route
-              component={Signup}
               exact
               path="/signup"
+              render={(props) => <Signup toggleLogin={this.toggleLogin} />}
             />
           </Switch>
         </Grid>

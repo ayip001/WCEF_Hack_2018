@@ -26,10 +26,10 @@ const SideMenu = ({ currentMenu, toggleMenu, showModal, toggleModal }) => {
 		<SplitButton
 			title="Time"
 		>
-			<MenuItem eventKey="1">5 Min</MenuItem>
-			<MenuItem eventKey="2">10 Min</MenuItem>
-			<MenuItem eventKey="3">1 Hour</MenuItem>
-			<MenuItem eventKey="4">24 Hours</MenuItem>
+			<MenuItem eventKey="1">10 Min</MenuItem>
+			<MenuItem eventKey="2">1 Hour</MenuItem>
+			<MenuItem eventKey="3">24 Hours</MenuItem>
+			<MenuItem eventKey="4">Indefintely</MenuItem>
 		</SplitButton>
 
           <h3>Select a storage service</h3>

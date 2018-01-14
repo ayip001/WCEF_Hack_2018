@@ -7,7 +7,8 @@ const Login = ({ toggleLogin, loggedIn }) => (
       to="/"
       onClick={() => toggleLogin(!loggedIn)}
     >
-      <a href="#">key path='~/Downloads' (default)</a>
+      <a href="#">key path=(default)</a>
+      <h2>Key located!</h2>
       <div class="google-btn">
         <div class="google-icon-wrapper">
         </div>

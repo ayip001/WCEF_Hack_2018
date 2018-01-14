@@ -72,33 +72,17 @@ class Signup extends React.Component {
         <h2>If you lose this you will lose means to recover your account, forever!</h2>
         <br />
         <br />
-        <a href="#">1</a>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;
-        <a href="#">11</a>
         <br />
         <Button>
           {block}
         </Button>
-        <br />
-        <a href="#">10</a>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;
-        <a href="#">20</a>
         <br />
         <br />
         <br />
       </div>,
       <div>
         <h2>Welcome to NCB!</h2>
+        <a href="#">Your private key has been stored into your device!</a>
         <Button href="/login">Log in now</Button>
       </div>
     ];

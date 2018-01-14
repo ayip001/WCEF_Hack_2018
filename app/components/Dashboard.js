@@ -13,7 +13,6 @@ class Dashboard extends React.Component {
   };
 
   toggleMenu (currentMenu) {
-    console.log(currentMenu);
     this.setState({currentMenu});
   };
 

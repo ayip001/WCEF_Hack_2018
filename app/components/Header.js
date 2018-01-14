@@ -20,7 +20,7 @@ const Header = ({ toggleLogin, loggedIn }) => {
   } else {
     menuItems = (
     <Nav pullRight>
-      <NavItem href="/" onClick={() => toggleLogin(!loggedIn)}>
+      <NavItem onClick={() => {window.location.replace("/");setTimeout(() => {toggleLogin(!loggedIn)}, 2000)}}>
         Logout
       </NavItem>
     </Nav>
@@ -28,16 +28,14 @@ const Header = ({ toggleLogin, loggedIn }) => {
   };
 
   return (
-    <div>
-      <Navbar staticTop collapseOnSelect>
-        <Navbar.Header>
-          <Navbar.Brand>
-            <Link to="/">NuCypher Bridge</Link>
-          </Navbar.Brand>
-        </Navbar.Header>
-        {menuItems}
-      </Navbar>
-    </div>
+    <Navbar staticTop>
+      <Navbar.Header>
+        <Navbar.Brand>
+          <Link to="/">NuCypher Bridge</Link>
+        </Navbar.Brand>
+      </Navbar.Header>
+      {menuItems}
+    </Navbar>
   );
 };
 

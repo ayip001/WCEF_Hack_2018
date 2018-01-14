@@ -25,15 +25,19 @@ class Dashboard extends React.Component {
       "account": <Account />
     };
 
+    const titles = {
+      "bridges": <h2>Bridges</h2>,
+      "services": <h2>Services</h2>,
+      "account": <h2>Account</h2>
+    };
+
     return (
       <Row className="show-grid">
         <Col xs={12} md={4}>
           <SideMenu currentMenu={currentMenu} toggleMenu={this.toggleMenu} />
         </Col>
         <Col xs={12} md={8}>
-          <h3 id="panelTitle">
-            {currentMenu}
-          </h3>
+          {titles[currentMenu]}
           <div className="dashboardPanels">
             {panels[currentMenu]}
           </div>

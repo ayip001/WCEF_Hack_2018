@@ -23,10 +23,14 @@ class Dashboard extends React.Component {
           <SideMenu />
         </Col>
         <Col xs={12} md={8}>
+          <div id="panelTitle">
           {"This is the dashboard container"}
-          <Bridges />
-          <Services />
-          <Account />
+          </div>
+          <div className="dashboardPanels">
+            <Bridges />
+            <Services />
+            <Account />
+          </div>
         </Col>
       </Row>
     );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, ListGroup, ListGroupItem, Modal, Row, Col, Grid } from 'react-bootstrap';
+import { Button, ListGroup, ListGroupItem, Modal, Row, Col, Grid, SplitButton, MenuItem } from 'react-bootstrap';
 import db from '../assets/images/db.png';
 import s3 from '../assets/images/S3.png';
 import storj from '../assets/images/Storj-symbol.png';	
@@ -21,7 +21,17 @@ const SideMenu = ({ currentMenu, toggleMenu, showModal, toggleModal }) => {
         
         <Modal.Body>
           <h3>Trustee's email</h3>
-            <input placeholder="hact@yahoo.com" />
+            <input placeholder="hact@yahoo.com" /> <br />
+            <br />
+		<SplitButton
+			title="Time"
+		>
+			<MenuItem eventKey="1">5 Min</MenuItem>
+			<MenuItem eventKey="2">10 Min</MenuItem>
+			<MenuItem eventKey="3">1 Hour</MenuItem>
+			<MenuItem eventKey="4">24 Hours</MenuItem>
+		</SplitButton>
+
           <h3>Select a storage service</h3>
             <Grid style={{"width":"1200px","padding-right" : "0px", "padding-left" : "0px"}}>
             	<Row style={{"margin":"auto","padding-bottom":"10px"}}>

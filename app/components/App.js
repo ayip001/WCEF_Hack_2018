@@ -1,18 +1,31 @@
 import React from 'react';
-import img from '../assets/images/react_logo_512x512.png';
+import { Route, Switch } from 'react-router-dom';
+import Header from './Header';
+import Landing from './Landing';
+import Login from './Login';
+import Signup from './Signup';
 
 const App = () => {
   return (
     <div>
-      <h2 id="heading">Hello ReactJS</h2>
-      <img
-        className="image"
-        style={{ margin: '0.5em' }}
-        height="40"
-        width="40"
-        src={img}
-        alt="React Logo"
-      />
+      <Header />
+      <Switch>
+        <Route
+          component={Landing}
+          exact
+          path="/"
+        />
+        <Route
+          component={Login}
+          exact
+          path="/login"
+        />
+        <Route
+          component={Signup}
+          exact
+          path="/signup"
+        />
+      </Switch>
     </div>
   );
 };

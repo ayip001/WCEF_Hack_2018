@@ -80,7 +80,7 @@ const SideMenu = ({ currentMenu, toggleMenu, showModal, toggleModal }) => {
           onClick={() => toggleMenu("bridges")}
           style={{"background-color":"white"}}
         >
-          Bridges
+          Trusts
         </ListGroupItem>
         <ListGroupItem
           href="#"

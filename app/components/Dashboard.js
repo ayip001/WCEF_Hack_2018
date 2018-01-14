@@ -31,7 +31,7 @@ class Dashboard extends React.Component {
     };
 
     const titles = {
-      "bridges": <h2>Bridges</h2>,
+      "bridges": <h2>Trusts</h2>,
       "services": <h2>Files</h2>,
       "account": <h2>Account</h2>
     };

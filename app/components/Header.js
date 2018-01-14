@@ -1,45 +1,42 @@
 import React from 'react';
 import StickyHeader from 'react-sticky-header';
 import { Link } from 'react-router-dom';
+import { Nav, Navbar, NavItem } from 'react-bootstrap';
 
 const Header = ({ toggleLogin, loggedIn }) => {
   let menuItems = null;
 
   if (loggedIn) {
     menuItems = (
-        <span>
-      <li className="Header_link">
+    <Nav pullRight>
+      <NavItem>
         <Link to="/login">Login</Link>
-      </li>
-      <li className="Header_link">
+      </NavItem>
+      <NavItem>
         <Link to="/signup">Sign Up</Link>
-      </li>
-        </span>
+      </NavItem>
+    </Nav>
     );
   } else {
     menuItems = (
-      <li className="Header_link" onClick={() => toggleLogin(!loggedIn)}>
-        <a href="/">Logout</a>
-      </li>
+    <Nav pullRight>
+      <NavItem href="/" onClick={() => toggleLogin(!loggedIn)}>
+        Logout
+      </NavItem>
+    </Nav>
     );
   };
 
   return (
     <div>
-      <StickyHeader
-        headerOnly
-        header={
-          <div className="Header_root">
-            <h2 className="Header_title">NuCypher Bridge</h2>
-            <ul className="Header_links">
-              <li className="Header_link">
-                <Link to="/">NuCypher Bridge</Link>
-              </li>
-              {menuItems}
-            </ul>
-          </div>
-        }
-      />
+      <Navbar staticTop collapseOnSelect>
+        <Navbar.Header>
+          <Navbar.Brand>
+            <Link to="/">NuCypher Bridge</Link>
+          </Navbar.Brand>
+        </Navbar.Header>
+        {menuItems}
+      </Navbar>
     </div>
   );
 };

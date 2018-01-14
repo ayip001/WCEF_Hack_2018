@@ -10,7 +10,7 @@ import { Grid } from 'react-bootstrap';
 class App extends React.Component {
   constructor () {
     super();
-    this.state = {"loggedIn":false};
+    this.state = {"loggedIn":"0"};
     this.toggleLogin = this.toggleLogin.bind(this);
   };
 
@@ -21,13 +21,20 @@ class App extends React.Component {
   render () {
     const { loggedIn } = this.state;
 
+    let home;
+    if (loggedIn) {
+      home = <Route component={Landing} exact path="/" />;
+    } else {
+      home = <Route component={Dashboard} exact path="/" />;
+    };
+
     return (
       <div>
         <Header toggleLogin={this.toggleLogin} loggedIn={loggedIn}/>
         <Grid>
           <Switch>
-            <Route component={Dashboard} exact path="/" />
-            <Route component={Login} exact path="/login" />
+            {home}
+            <Route exact path="/login" render={(props) => <Login toggleLogin={this.toggleLogin} loggedIn={loggedIn}/>} />
             <Route component={Signup} exact path="/signup" />
           </Switch>
         </Grid>

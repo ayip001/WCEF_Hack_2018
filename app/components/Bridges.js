@@ -7,16 +7,14 @@ import { Row, Col } from 'react-bootstrap';
  
 const Bridges = () => (
 <div>
-  <Row className="Bridges-Grid">
-  	<Col md={4}>
+  <Row>	
+  	<Col xs={6} md={4} style={{'padding':'0px'}} >
       <div className="bridgePanels">
         <Equifax />
         <Experian />
       </div>
     </Col>
-  </Row>
-  <Row className="Bridges-Grid">
-  	<Col md={4}>
+  	<Col xs={6} md={4} style={{'padding':'0px'}}>
       <div className="bridgePanels">
         <TransUnion />
         <Propy />

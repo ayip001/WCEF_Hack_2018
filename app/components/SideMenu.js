@@ -1,5 +1,7 @@
 import React from 'react';
 import { Button, ListGroup, ListGroupItem, Modal } from 'react-bootstrap';
+import db from '../assets/images/db.png';	
+
 
 const SideMenu = ({ currentMenu, toggleMenu, showModal, toggleModal }) => {
   return (

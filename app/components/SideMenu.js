@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, ListGroup, ListGroupItem, Modal, Row, Col, Grid, SplitButton, MenuItem } from 'react-bootstrap';
 import db from '../assets/images/db.png';
 import s3 from '../assets/images/S3.png';
-import storj from '../assets/images/Storj-symbol.png';	
+import ipfs from '../assets/images/ipfs.png';	
 import drive from '../assets/images/drive.png';	
 
 
@@ -55,7 +55,7 @@ const SideMenu = ({ currentMenu, toggleMenu, showModal, toggleModal }) => {
             	<Row>	
             		<Col xs={1} md={2}>
             			<Button>
-            				<img src={storj} style={{"width":"150px","height":"150px",}}/>
+            				<img src={ipfs} style={{"width":"150px","height":"150px",}}/>
             			</Button>
             		</Col>
             		<Col xs={1} md={2}>

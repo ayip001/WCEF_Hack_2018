@@ -11,27 +11,27 @@ Sample usecase ranges from personal free users to entities with a large database
 
 ## Features
 ### Initial features
-•	Easily Invite Users by email
-•	Send “Trust” requests (public key access)
-•	Popular platform Integration
-o	Amazon S3
-o	IPFS
-o	Google Drive
-o	Dropbox
-•	Access Controls
-o	Timed
-•	Seed Generation
+•	Easily Invite Users by email  
+•	Send “Trust” requests (public key access)  
+•	Popular platform Integration  
+o	Amazon S3  
+o	IPFS  
+o	Google Drive  
+o	Dropbox  
+•	Access Controls  
+o	Timed  
+•	Seed Generation  
 
 ### Planned features
-•	API access
-•	Access Controls expanded
-o	Smart contract integration
-o	Fiat payment gates
-o	Metered Access 
-•	Additional Security 
-o	2FA
-o	Challenge Access
-o	Browser Security Check
-♣	Alerts for new users
-♣	Warnings to existing users
-•	File Storage
+•	API access  
+•	Access Controls expanded  
+o	Smart contract integration  
+o	Fiat payment gates  
+o	Metered Access  
+•	Additional Security  
+o	2FA  
+o	Challenge Access  
+o	Browser Security Check  
+♣	Alerts for new users  
+♣	Warnings to existing users  
+•	File Storage  
